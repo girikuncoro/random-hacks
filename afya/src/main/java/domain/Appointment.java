@@ -4,12 +4,20 @@ import java.util.Date;
 
 public class Appointment {
 	
+	private Integer AppointmentId;
 	private Integer patientId;
 	private Integer doctorId;
-	private int userId;
+	private User user;
 	private Date dateAndTime;
 	private int clinicId;
 	private boolean appointmentStatus;
+	
+	public Integer getAppointmentId() {
+		return AppointmentId;
+	}
+	public void setAppointmentId(Integer appointmentId) {
+		AppointmentId = appointmentId;
+	}
 	public Integer getPatientId() {
 		return patientId;
 	}
@@ -22,12 +30,7 @@ public class Appointment {
 	public void setDoctorId(Integer doctorId) {
 		this.doctorId = doctorId;
 	}
-	public int getUserId() {
-		return userId;
-	}
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
+
 	public Date getDateAndTime() {
 		return dateAndTime;
 	}
@@ -45,5 +48,11 @@ public class Appointment {
 	}
 	public void setAppointmentStatus(boolean appointmentStatus) {
 		this.appointmentStatus = appointmentStatus;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
 	}
 }
