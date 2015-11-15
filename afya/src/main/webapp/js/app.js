@@ -6,6 +6,7 @@ var patientData = {
   'Joanne Kim': {age: 24, date: "2011/12/13"},
   'Abhishek Agarwal': {age: 19, date: "2014/12/13"},
   'Ghaitsa Kenang': {age: 15, date: "2011/12/13"},
+  'Sarah Schuyler': {age: 21, date: "2011/5/4"}
 };
 
 $.get("http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers", function(data){
