@@ -1,12 +1,11 @@
 package database;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-//
-//import com.mysql.jdbc.Connection;
-//import com.mysql.jdbc.Statement;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +67,28 @@ public class UserDatabaseConnector {
 		rs.close();
 		statement.close();
 		return users;
+	}
+
+	public User createNewUser(User user) {
+		Connection conn;
+		try {
+			conn = getConnection();
+			PreparedStatement prep = conn.prepareStatement("INSERT INTO User (userId,lastName,firstName,dob)"
+					+ " Values(?,?,?,?)");
+			prep.setInt(1, user.getUserId());
+			prep.setString(2,user.getLastName());
+			prep.setString(3,user.getFirstName());
+			prep.setDate(4,new Date(user.getDob().getTime()));
+			prep.executeUpdate();
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 }// end FirstExample
