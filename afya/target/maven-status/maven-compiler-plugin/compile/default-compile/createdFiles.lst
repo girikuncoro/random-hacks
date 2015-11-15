@@ -1,0 +1,6 @@
+businessLayer/UserService.class
+container/AfyaMainContainer.class
+domain/User.class
+database/DatabaseConnector.class
+web/UserApi.class
+database/DatabaseConfig.class

@@ -1,0 +1,16 @@
+<web-app>
+	<servlet>
+		<servlet-name>main-servlet</servlet-name>
+		<servlet-class>org.glassfish.jersey.servlet.ServletContainer
+		</servlet-class>
+		<init-param>
+			<param-name>javax.ws.rs.Application</param-name>
+			<param-value>container.AfyaMainContainer</param-value>
+		</init-param>
+
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>main-servlet</servlet-name>
+		<url-pattern>/dossier/*</url-pattern>
+	</servlet-mapping>
+</web-app>
