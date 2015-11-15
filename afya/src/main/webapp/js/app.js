@@ -9,17 +9,30 @@ var patientData = {
   'Sarah Schuyler': {age: 21, date: "2011/5/4"}
 };
 
-$.get("http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers", function(data){
-  patientData = data; 
-  console.log(patientData); 
-  alert("Data Logged"); 
-});
+// $.get("http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers", function(data){
+//   patientData = data; 
+//   console.log(patientData); 
+//   alert("Data Logged"); 
+// });
 
 var App = React.createClass({
   getInitialState: function() {
     return { patientName: '', showPatient: false }
   },
 
+  loadPatientData: function() {
+    $.ajax({
+      url: "http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers",
+      dataType: "json",
+      success: function(data) {
+        console.log(data);
+      }.bind(this),
+      error: function(xhr, status, err){
+        console.log("This is an error");
+      }.bind(this)
+
+    }); 
+  }, 
   getSuggestions: function(input, callback) {
     var regex = new RegExp('^' + input, 'i');
     var suggestions = patient.filter(function(p) {
