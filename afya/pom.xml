@@ -60,7 +60,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
             <configuration>
-                <outputDirectory>/Users/arielganz/Downloads/apache-tomcat-8.0.28/webapps/</outputDirectory>
+                <outputDirectory>/Users/abhishekagarwal/Cornell/Fall</outputDirectory>
             </configuration>
         </plugin>
     </plugins>
