@@ -11,13 +11,19 @@ import domain.Appointment;
 public class AppointmentsRestApi {
 	
 	
-	public List<Appointment> getAppointments() {
-		Calendar cal = Calendar.getInstance();
-		cal.getTime();
-	}
+//	public List<Appointment> getAppointments() {
+//		Calendar cal = Calendar.getInstance();
+//		cal.getTime();
+//	}
 	
-	public List<Appointment> getAppointmentsForDate() {
-		Calendar
-	}
+//	public List<Appointment> getAppointmentsForDate() {
+//		Calendar
+//	}
+//	
+//	@GET
+//	@Path("/newApppointment")
+//	public void getNewAppointment(userId) {
+//		Insert into Appointment
+//	}
 
 }
