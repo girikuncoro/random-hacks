@@ -1,4 +1,4 @@
-var patient = ['Giri Kuncoro', 'Allie Meng', 'Ariel Ganz', 'Joanne Kim', 'Abhishek Agarwal', 'Ghaitsa Kenang'];
+var patient = ['Giri Kuncoro', 'Allie Meng', 'Abhishek Agarwal'];
 var patientData = {
   'Giri Kuncoro': {age: 12, date: "2014/12/13"},
   'Allie Meng': {age: 15, date: "2011/12/13"},
