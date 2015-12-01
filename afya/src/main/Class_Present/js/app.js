@@ -80,7 +80,7 @@ var PatientBox = React.createClass({
                 </div>
                 <div className="panel-body">
                   <div className="row">
-                    <div className="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="../img/jpg" className="img-circle img-responsive" /> </div>
+                    <div className="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="../img/allie.jpg" className="img-circle img-responsive" /> </div>
                     <div className=" col-md-9 col-lg-9 ">
                       <table className="table table-user-information">
                         <tbody>
