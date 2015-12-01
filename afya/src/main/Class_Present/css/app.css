@@ -1,0 +1,89 @@
+#app {
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+.react-autosuggest {
+  position: relative;
+}
+.react-autosuggest input {
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+}
+.react-autosuggest input[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.react-autosuggest input:focus {
+  outline: none;
+}
+.react-autosuggest__suggestions {
+  position: absolute;
+  top: 51px;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: 1px solid #aaaaaa;
+  background-color: #fff;
+  font-size: 18px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+.react-autosuggest__suggestions-section:first-child .react-autosuggest__suggestions-section-name {
+  border-top: 0;
+}
+.react-autosuggest__suggestions-section-name {
+  padding: 10px 0 0 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+  border-top: 1px dashed #ccc;
+}
+.react-autosuggest__suggestions-section-suggestions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.react-autosuggest__suggestion--focused {
+  background-color: #ddd;
+}
+
+
+/* This is for user stupid profile */
+.user-row {
+    margin-bottom: 14px;
+}
+.user-row:last-child {
+    margin-bottom: 0;
+}
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 100%;
+}
+.dropdown-user:hover {
+    cursor: pointer;
+}
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:20px;
+}
+.wide {
+  padding-bottom: 40px;
+}

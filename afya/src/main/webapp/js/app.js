@@ -8,13 +8,22 @@ var patientData = {
   'Ghaitsa Kenang': {age: 15, date: "2011/12/13"},
   'Sarah Schuyler': {age: 21, date: "2011/5/4"}
 };
+console.log("Hey Whatssip");
 
-// $.get("http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers", function(data){
-//   patientData = data; 
-//   console.log(patientData); 
-//   alert("Data Logged"); 
-// });
+function init() {
+  console.log("Just for fun");
+}
 
+init();
+
+$.get("http://default-environment-yppgutk292.elasticbeanstalk.com/dossier/user/allUsers", function(data){
+  patientData = data; 
+  console.log(patientData); 
+  alert("Data Logged"); 
+});
+
+
+console.log("Nothing man You tell");
 var App = React.createClass({
   getInitialState: function() {
     return { patientName: '', showPatient: false }
